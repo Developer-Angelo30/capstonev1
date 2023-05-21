@@ -1,0 +1,195 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --yellow: #F5D04C;
+    --orange: #FCB053;
+    --blue: #5176E4;
+    --background: #f2f2f2;
+  }
+
+.login-section{
+    background-image: url("../images/bg-photo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.login-section > .login-box-center {
+    background-color: white;
+    border-radius: 20px;
+    width:  1000px;
+    height: 720px;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+}
+
+.left{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px 0 120px 20px;
+}
+
+.left > .yellow{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--yellow);
+    border-radius: 20px 0 120px 20px;
+}
+
+.left > .orange{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 95%;
+    background-color: var(--orange);
+    border-radius: 20px 0 120px 20px;
+}
+
+.left > .blue{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 85%;
+    background-color: var(--blue);
+    border-radius: 20px 0 120px 20px;
+}
+
+.right{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 0 20px 20px 0;
+}
+
+.right > .yellow{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--yellow);
+    border-radius: 0px 20px 20px 0;
+}
+
+.right > .orange{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 95%;
+    background-color: var(--orange);
+    border-radius: 0px 20px 20px 0;
+}
+
+.right > .white{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 120px 20px 20px 0;
+}
+
+.right > .white > #loginForm > .neust-logo-center > .neust-logo{
+   height: 200px;
+   width: 200px;
+}
+
+
+/*  */
+.verification-section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.verification-section > .verification-center > #verificationForm > .group-input{
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px 40px;
+    column-gap: 5px;
+}
+
+.verification-section > .verification-center > #verificationForm > .group-input > input{
+    text-align: center;
+    height: 60px;
+    font-size: 20px;
+}
+
+@media (max-width: 1280px){
+    .login-section > .login-box-center {
+        width:  70%;
+        height: 500px;
+    }
+
+    .right > .white > #loginForm > .neust-logo-center > .neust-logo{
+        height: 120px;
+        width: 120px;
+    }
+    
+    .left , .left > .yellow , .left > .orange, .left > .blue{
+        border-radius: 20px 0  80px 20px;
+    }
+
+    
+    .right, .right > .yellow , .right > .orange{
+        border-radius: 0 20px 20px 0;
+    }
+    
+    .right > .white{
+        border-radius:  80px 20px 20px 0;
+    }
+}
+
+@media (max-width: 769px){
+
+    .login-section > .login-box-center {
+        grid-template-columns: 1fr;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .login-section > .login-box-center {
+        width:  70%;
+        height: 500px;
+    }
+
+    .right, .right > .yellow , .right > .orange{
+        border-radius: 20px;
+    }
+    
+    .right > .white{
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 481px){
+    .login-section > .login-box-center {
+        width:  90%;
+        height: 400px;
+    }
+
+    .right > .white > #loginForm > .neust-logo-center > .neust-logo{
+        height: 60px;
+        width: 60px;
+     }
+
+}
+
+@media (max-width: 320px){
+    .login-section > .login-box-center {
+        width:  90%;
+        height: 400px;
+    }
+}
