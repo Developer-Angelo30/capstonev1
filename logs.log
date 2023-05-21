@@ -1,1 +1,7 @@
 [2023-05-19 11:47:52 AM] - IP:::1, OS:"Linux", MESSAGE:logout.
+[2023-05-21 04:21:19 PM] - IP:::1, OS:"Linux", MESSAGE:logout.
+[2023-05-21 04:21:36 PM] - IP:::1, OS:"Linux", MESSAGE:login as dean.
+[2023-05-21 08:31:02 PM] - IP:::1, OS:"Linux", MESSAGE:logout.
+[2023-05-21 08:31:23 PM] - IP:::1, OS:"Linux", MESSAGE:login as dean.
+[2023-05-21 09:03:08 PM] - IP:192.168.100.10, OS:, MESSAGE:password field is required
+[2023-05-21 09:03:21 PM] - IP:192.168.100.10, OS:, MESSAGE:login as dean.

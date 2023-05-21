@@ -1,0 +1,169 @@
+:root {
+    --yellow: #F5D04C;
+    --orange: #FCB053;
+    --blue: #5176E4;
+    --background: #f2f2f2;
+    --black: rgba(0, 0, 0, 0.685);
+}
+
+#bars{
+    display: none;
+}
+
+#close-sidebar{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    display: none;
+}
+
+/* start of real css */
+
+#dean-dashboard{
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+#dean-dashboard .top-color{
+    position: absolute;
+    top: 0px;
+    background-color: var(--blue);
+    height: 250px;
+    width: 100%;
+    z-index: 1;
+    border-radius: 0 0 30px 30px;
+}
+
+/* start sidebar */
+
+#sidebar, #content{
+    position: relative;
+    z-index: 2;
+    min-height: 100%;
+}
+
+nav{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background-color: var(--blue);
+}
+
+#sidebar > .blue-side{
+    height: 250px;
+}
+
+#sidebar .container  > .row > .col > a  > .icon-holder {
+    border-radius: 10px;
+    padding: 10px 0px;
+    color: var(--black);
+}
+
+#sidebar .container  > .row > .col > a  > .icon-holder-active {
+    background-color: var(--blue);
+    border-radius: 10px;
+    padding: 10px 0px;
+    color: white;
+}
+
+#sidebar .container  > .row > .col > a  > .icon-holder > i{
+    font-size: 25px;
+}
+
+
+/* start content */
+
+#content{
+    position: relative;
+    height: 100vh;
+    overflow-y:hidden;
+}
+
+#content > #home , #content > #setting {
+    position: relative;
+    height: 100%;
+    overflow-y: auto;
+}
+
+
+
+@media (max-width: 1280px){
+    #dean-dashboard{
+        /* background-color: pink; */
+        grid-template-columns: 230px 1fr;
+    }
+}
+
+@media (max-width: 769px){
+
+   #dean-dashboard{
+        
+    }
+
+}
+
+@media (max-width: 481px){
+    
+    #bars{
+        display: block;
+        font-size: 25px;
+    }
+
+   #dean-dashboard{
+        grid-template-columns: 1fr;
+    }
+
+    #close-sidebar{
+        display: block;
+    }
+
+    #sidebar{
+        display: none;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        z-index: 5;
+    }
+
+    #sidebar > .blue-side{
+        height: 250px;
+        background-color: var(--blue);
+        border-radius: 20px;
+    }
+    
+
+
+}
+
+@media (max-width: 320px){
+    #bars{
+        display: block;
+        font-size: 25px;
+    }
+
+   #dean-dashboard{
+        grid-template-columns: 1fr;
+    }
+
+    #close-sidebar{
+        display: block;
+    }
+
+    #sidebar{
+        display: none;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        z-index: 5;
+    }
+
+    #sidebar > .blue-side{
+        height: 250px;
+        background-color: var(--blue);
+        border-radius: 20px;
+    }
+
+}
